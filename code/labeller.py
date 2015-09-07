@@ -12,7 +12,7 @@ from datetime import datetime
 from datetime import timedelta
 import numpy as np
 import os  
-partition=[[0,1,2,3,4,5],[6,7,8,9]]
+partition=[[0,1,2,3,4],[5,6,7,8,9]]
 time_frame=3
 
 def part(Y):
@@ -64,3 +64,5 @@ def labeller():
 		date+=timedelta(0,time_frame*timestep)
 	outfile.close()
 	return 
+
+labeller()
