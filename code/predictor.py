@@ -27,8 +27,7 @@ def predictor(path_to_classifier,path_to_features,time):
 				chosen=x	
 				break
 		k+=1
-	chosen=chosen[1:-1]
-	X=np.array([float(c) for c in chosen])
+	X=np.array([float(c) for c in chosen[1:-1]])
 	y=clf.predict(X)
 	return y
 
